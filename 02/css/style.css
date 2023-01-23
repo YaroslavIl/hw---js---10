@@ -1,0 +1,9 @@
+body{
+    background: url(/img/4.jpg) 0 0/100% auto no-repeat;
+}
+.con{
+    background-color: rgba(0, 0, 0, 0);
+}
+.error{
+    border-color: red;
+}
