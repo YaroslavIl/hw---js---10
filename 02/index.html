@@ -10,29 +10,39 @@
 </head>
 <body class="p-3 bg-success">
 
-    <div class="container-xl p-4 con">
+   <div id="modal" class="modal fade" data-keyboard="false" tabindex="-1 " aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body fs-1 p-5 text-center">
+            Дякуємо за замовлення
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xl p-4 con ">
         <form action="" class="d-flex">
             <div  class="w-50 me-2">
-                <select class="form-select border-3 select " name="select" aria-label="Default select example">
-                    <option selected>Виберіть розмір піци</option>
+                <select class="form-select border-3 select "  name="select" aria-label="Default select example">
+                    <option selected value="0">Виберіть розмір піци</option>
                     <option value="250">Велика піцца - 250 грн</option>
                     <option value="200">Середня піцца - 200 грн</option>
                     <option value="150">Маленька піцца - 150 грн</option>
                 </select>
                 <div class="mt-4">
                     <select class="form-select border-3 select" name="select" aria-label="Default select example">
-                    <option selected>Виберіть доставку</option>
+                    <option selected value="0">Виберіть доставку</option>
                     <option value="30">Доставка до дому - 30 грн</option>
-                    <option value="0">Самовивіз - 0 грн</option>
+                    <option value="1">Самовивіз - 0 грн</option>
                 </select>
                 </div>
                 <div class="mt-4 ">
-                    <button type="submit" class="btn btn-primary w-100 button border-3">Замовити</button>
+                    <button type="submit" data-bs-toggle="modal" data-bs-target="#modal" disabled class="btn btn-primary w-100 button border-3">Замовити</button>
                 </div>
             </div>
             <div class="w-50 ms-2">
                 <select class="form-select border-3 select" name="select" aria-label="Default select example">
-                    <option selected>Виберіть начинку</option>
+                    <option selected value="0">Виберіть начинку</option>
                     <option value="250">Чотири сира - 250 грн</option>
                     <option value="230">Мясна - 230 грн</option>
                     <option value="220">Цезарь - 220 грн</option>

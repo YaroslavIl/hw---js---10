@@ -4,6 +4,6 @@ body{
 .con{
     background-color: rgba(0, 0, 0, 0);
 }
-.error{
-    border-color: red;
+.hid{
+    /* opacity: 0; */
 }
